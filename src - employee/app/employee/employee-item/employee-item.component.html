@@ -1,0 +1,6 @@
+<ion-item [routerLink]="['/employee', employeeItem.id]">
+  <ion-avatar slot="start">
+    <img [src]="employeeItem.imageUrl" height="50" width="50" />
+  </ion-avatar>
+  <label>{{ employeeItem.name }}</label>
+</ion-item>

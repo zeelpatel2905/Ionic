@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Employee Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <app-employee-item
+      *ngFor="let emp of employee"
+      [employeeItem]="emp"
+    ></app-employee-item>
+  </ion-list>
+</ion-content>
