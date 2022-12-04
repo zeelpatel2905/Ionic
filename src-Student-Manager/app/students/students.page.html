@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>BMIIT Students</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label>Username:</ion-label>
+      <ion-input placeholder="Enter Username" [(ngModel)]="user.username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Password:</ion-label>
+      <ion-input type="password" placeholder="Enter Password" [(ngModel)]="user.password"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button (click)="onBtnChangeClick()">Login</ion-button>
+</ion-content>
